@@ -1,0 +1,1347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSC101 Human Rights Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .quiz-container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .quiz-title {
+            color: #0056b3;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .section-title {
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+        .question-block {
+            margin-bottom: 25px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .question-text {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .options label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: normal;
+        }
+        .options input[type="radio"] {
+            margin-right: 8px;
+        }
+        .show-answer-btn {
+            padding: 8px 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+        .show-answer-btn:hover {
+            background-color: #218838;
+        }
+        .answer {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #e9ecef;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            color: #0056b3;
+            font-weight: bold;
+        }
+        .citation {
+            font-size: 0.8em;
+            color: #6c757d;
+            margin-left: 5px;
+        }
+        hr {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border: 0;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+
+<div class="quiz-container">
+    <h1 class="quiz-title">PSC101 Human Rights Interactive Quiz</h1>
+
+    <h2 class="section-title">Multiple Choice Questions (MCQ) - Human Rights PSC101 <span class="citation">[cite: 1]</span></h2>
+    <hr>
+
+    <div class="question-block">
+        <p class="question-text">1. What is the central importance of the principle of non-discrimination in international law? <span class="citation">[cite: 1]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_1" value="A"> A. It allows states to favor their own citizens <span class="citation">[cite: 2]</span></label>
+            <label><input type="radio" name="mcq_1" value="B"> B. It ensures that all human beings can enjoy their rights equally</label>
+            <label><input type="radio" name="mcq_1" value="C"> C. It restricts international treaties</label>
+            <label><input type="radio" name="mcq_1" value="D"> D. It permits differential treatment based solely on nationality</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 2]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">2. Under the principle of non-discrimination, which article of the UDHR specifically addresses equality? <span class="citation">[cite: 2]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_2" value="A"> A. Article 1 <span class="citation">[cite: 3]</span></label>
+            <label><input type="radio" name="mcq_2" value="B"> B. Article 2 and Article 7</label>
+            <label><input type="radio" name="mcq_2" value="C"> C. Article 15</label>
+            <label><input type="radio" name="mcq_2" value="D"> D. Article 19</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 3]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">3. When does a difference in treatment NOT constitute discrimination? <span class="citation">[cite: 3]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_3" value="A"> A. When it is based on arbitrary distinctions <span class="citation">[cite: 4]</span></label>
+            <label><input type="radio" name="mcq_3" value="B"> B. When it has an objective and reasonable justification and pursues a legitimate aim</label>
+            <label><input type="radio" name="mcq_3" value="C"> C. When it favors a vulnerable group over another</label>
+            <label><input type="radio" name="mcq_3" value="D"> D. When it is solely based on nationality</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 4]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">4. What does the Human Rights Committee imply regarding differentiation of treatment? <span class="citation">[cite: 4]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_4" value="A"> A. All differentiation of treatment is automatically considered discriminatory <span class="citation">[cite: 5]</span></label>
+            <label><input type="radio" name="mcq_4" value="B"> B. Differentiation is acceptable if the criteria are reasonable, objective, and pursue a legitimate aim</label>
+            <label><input type="radio" name="mcq_4" value="C"> C. Only direct discrimination is acceptable</label>
+            <label><input type="radio" name="mcq_4" value="D"> D. Differentiation must be based solely on economic factors</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 5]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">5. In assessing indirect discrimination, what is considered most important? <span class="citation">[cite: 5]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_5" value="A"> A. The intention behind the law or practice <span class="citation">[cite: 6]</span></label>
+            <label><input type="radio" name="mcq_5" value="B"> B. The consequence or effect on disadvantaged groups</label>
+            <label><input type="radio" name="mcq_5" value="C"> C. The historical background of the law</label>
+            <label><input type="radio" name="mcq_5" value="D"> D. The economic cost of the law</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 6]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">6. Which groups are often identified as vulnerable in the context of non-discrimination? <span class="citation">[cite: 6]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_6" value="A"> A. High-income individuals <span class="citation">[cite: 7]</span></label>
+            <label><input type="radio" name="mcq_6" value="B"> B. Majority ethnic groups</label>
+            <label><input type="radio" name="mcq_6" value="C"> C. Women, minorities, indigenous peoples, refugees, and persons with disabilities</label>
+            <label><input type="radio" name="mcq_6" value="D"> D. Only political leaders</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: C <span class="citation">[cite: 7]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">7. What does the principle of non-discrimination require states to do regarding vulnerable groups? <span class="citation">[cite: 8]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_7" value="A"> A. To ignore any differences in treatment <span class="citation">[cite: 9]</span></label>
+            <label><input type="radio" name="mcq_7" value="B"> B. To identify and take measures to protect those most disadvantaged in the enjoyment of human rights</label>
+            <label><input type="radio" name="mcq_7" value="C"> C. To apply a one-size-fits-all approach to all citizens</label>
+            <label><input type="radio" name="mcq_7" value="D"> D. To eliminate all distinctions, regardless of context</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 9]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">8. What is an essential characteristic of affirmative action measures? <span class="citation">[cite: 9]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_8" value="A"> A. They are permanent solutions <span class="citation">[cite: 10]</span></label>
+            <label><input type="radio" name="mcq_8" value="B"> B. They provide temporary special preferences to address structural disadvantages</label>
+            <label><input type="radio" name="mcq_8" value="C"> C. They apply only to economic policies</label>
+            <label><input type="radio" name="mcq_8" value="D"> D. They aim to benefit all groups equally without distinction</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 10]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">9. Why must affirmative action be temporary? <span class="citation">[cite: 10]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_9" value="A"> A. To ensure that it does not become a permanent preference once objectives have been achieved <span class="citation">[cite: 11]</span></label>
+            <label><input type="radio" name="mcq_9" value="B"> B. Because it is too costly to maintain</label>
+            <label><input type="radio" name="mcq_9" value="C"> C. Because it only applies during election cycles</label>
+            <label><input type="radio" name="mcq_9" value="D"> D. Because it violates international law if permanent</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: A <span class="citation">[cite: 11]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">10. Which of the following is a direct consequence of discrimination under international human rights law? <span class="citation">[cite: 11]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_10" value="A"> A. Enhanced participation in the legal process <span class="citation">[cite: 12]</span></label>
+            <label><input type="radio" name="mcq_10" value="B"> B. Nullification or impairment of the equal enjoyment or exercise of rights</label>
+            <label><input type="radio" name="mcq_10" value="C"> C. Increased economic prosperity for disadvantaged groups</label>
+            <label><input type="radio" name="mcq_10" value="D"> D. Temporary benefits for all citizens</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 12]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">11. What role do international human rights supervisory bodies play in relation to the principle of non-discrimination? <span class="citation">[cite: 12]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_11" value="A"> A. They solely interpret economic policies <span class="citation">[cite: 13]</span></label>
+            <label><input type="radio" name="mcq_11" value="B"> B. They ensure that differentiation in treatment meets criteria of objectivity, reasonableness, and proportionality</label>
+            <label><input type="radio" name="mcq_11" value="C"> C. They advocate for unrestricted state power</label>
+            <label><input type="radio" name="mcq_11" value="D"> D. They dismiss any claims of indirect discrimination</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 13]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">12. What is the overall aim of protective measures and affirmative action for vulnerable groups under the principle of non-discrimination? <span class="citation">[cite: 13]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_12" value="A"> A. To ensure that the dominant groups retain their privileges <span class="citation">[cite: 14]</span></label>
+            <label><input type="radio" name="mcq_12" value="B"> B. To provide special preferences that remove structural disadvantages and promote equal participation</label>
+            <label><input type="radio" name="mcq_12" value="C"> C. To create permanent separations between groups</label>
+            <label><input type="radio" name="mcq_12" value="D"> D. To reduce government intervention in social policies</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 14]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">13. Which of the following best describes one of the primary functions of law? <span class="citation">[cite: 15]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_13" value="A"> A. To offer recommendations without any binding force <span class="citation">[cite: 16]</span></label>
+            <label><input type="radio" name="mcq_13" value="B"> B. To set out rules that specify how people should behave, define terms, and create competences</label>
+            <label><input type="radio" name="mcq_13" value="C"> C. To act as a mere expression of moral beliefs</label>
+            <label><input type="radio" name="mcq_13" value="D"> D. To regulate only economic transactions</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 16]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">14. What does the term "positive law" primarily refer to? <span class="citation">[cite: 16]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_14" value="A"> A. The law that exists solely in moral or ethical theory <span class="citation">[cite: 17]</span></label>
+            <label><input type="radio" name="mcq_14" value="B"> B. The set of legal rules that are created and enforced by state agencies</label>
+            <label><input type="radio" name="mcq_14" value="C"> C. The unchangeable moral principles that govern society</label>
+            <label><input type="radio" name="mcq_14" value="D"> D. The customary practices of a community that are never written down</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 17]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">15. Which of the following examples best illustrates how law reflects societal values? <span class="citation">[cite: 17]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_15" value="A"> A. Regulations specifying the amount of salt allowed in food <span class="citation">[cite: 18]</span></label>
+            <label><input type="radio" name="mcq_15" value="B"> B. Laws against murder, reflecting the moral belief that killing another person is wrong</label>
+            <label><input type="radio" name="mcq_15" value="C"> C. Administrative rules on the formatting of government requests</label>
+            <label><input type="radio" name="mcq_15" value="D"> D. Traffic laws that do not involve moral considerations</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 18]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">16. Laws are required to balance: <span class="citation">[cite: 18]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_16" value="A"> A. Economic success with military power</label>
+            <label><input type="radio" name="mcq_16" value="B"> B. Rights with responsibilities and the will of the majority with the rights of the minority</label>
+            <label><input type="radio" name="mcq_16" value="C"> C. Only the rights of the majority</label>
+            <label><input type="radio" name="mcq_16" value="D"> D. Moral values with religious doctrines</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 18]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">17. What is one reason that legal rules are often compared and contrasted with moral rules? <span class="citation">[cite: 18]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_17" value="A"> A. Because legal rules and moral rules are always identical <span class="citation">[cite: 19]</span></label>
+            <label><input type="radio" name="mcq_17" value="B"> B. Because it is desirable that the law does not violate morality</label>
+            <label><input type="radio" name="mcq_17" value="C"> C. Because governments enforce both morality and law in the same manner</label>
+            <label><input type="radio" name="mcq_17" value="D"> D. Because moral rules directly prescribe legal obligations</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 19]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">18. Which of the following best explains the role of government regarding morality and law? <span class="citation">[cite: 20]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_18" value="A"> A. Governments are responsible for enforcing both law and morality equally <span class="citation">[cite: 21]</span></label>
+            <label><input type="radio" name="mcq_18" value="B"> B. Governments enforce the law but generally do not enforce morality</label>
+            <label><input type="radio" name="mcq_18" value="C"> C. Governments have no role in enforcing either law or morality</label>
+            <label><input type="radio" name="mcq_18" value="D"> D. Governments enforce morality directly by punishing all immoral acts</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 21]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">19. Which of the following is an example of a moral rule that has a legal counterpart enforced by state organs? <span class="citation">[cite: 21]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_19" value="A"> A. The prohibition of lying <span class="citation">[cite: 22]</span></label>
+            <label><input type="radio" name="mcq_19" value="B"> B. The prohibition of murder</label>
+            <label><input type="radio" name="mcq_19" value="C"> C. The regulation of bicycle lighting</label>
+            <label><input type="radio" name="mcq_19" value="D"> D. The prescribed form for government requests</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 22]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">20. Many legal rules that deal with less serious issues, such as the amount of salt allowed in food, demonstrate that: <span class="citation">[cite: 22]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_20" value="A"> A. All legal rules address issues of major societal importance</label>
+            <label><input type="radio" name="mcq_20" value="B"> B. The law only focuses on moral issues</label>
+            <label><input type="radio" name="mcq_20" value="C"> C. Legal rules also regulate matters that are not necessarily broadly experienced as "serious"</label>
+            <label><input type="radio" name="mcq_20" value="D"> D. These rules are enforced with the same rigor as rules against murder</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: C <span class="citation">[cite: 22]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">21. What is one major difference between the enforcement of legal rules and moral precepts? <span class="citation">[cite: 22]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_21" value="A"> A. Legal rules are enforced by state organs through specific sanctions, while moral precepts are not enforced in the same way <span class="citation">[cite: 23]</span></label>
+            <label><input type="radio" name="mcq_21" value="B"> B. Both legal rules and moral precepts are enforced identically by the government</label>
+            <label><input type="radio" name="mcq_21" value="C"> C. Moral precepts are enforced through incarceration and fines</label>
+            <label><input type="radio" name="mcq_21" value="D"> D. Legal rules rely solely on voluntary compliance without any sanctions</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: A <span class="citation">[cite: 23]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">22. How does tort law provide a legal counterpart to a moral norm? <span class="citation">[cite: 23]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_22" value="A"> A. It enforces moral guidelines by punishing dishonesty <span class="citation">[cite: 24]</span></label>
+            <label><input type="radio" name="mcq_22" value="B"> B. It enforces the prohibition of property destruction by requiring compensation for damages</label>
+            <label><input type="radio" name="mcq_22" value="C"> C. It focuses on prescribing dietary regulations</label>
+            <label><input type="radio" name="mcq_22" value="D"> D. It sets standards for governmental request procedures</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 24]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">23. Which statement best describes the concept of "fields of law"? <span class="citation">[cite: 24]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_23" value="A"> A. Law is a uniform set of rules applied equally in all circumstances <span class="citation">[cite: 25]</span></label>
+            <label><input type="radio" name="mcq_23" value="B"> B. Law consists of many different branches that sometimes vary considerably from one another</label>
+            <label><input type="radio" name="mcq_23" value="C"> C. Law only deals with issues related to criminal activity</label>
+            <label><input type="radio" name="mcq_23" value="D"> D. Law is exclusively concerned with public issues</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 25]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">24. What branch of private law governs issues such as sales, ownership, and mortgages? <span class="citation">[cite: 26]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_24" value="A"> A. Contract law <span class="citation">[cite: 27]</span></label>
+            <label><input type="radio" name="mcq_24" value="B"> B. Family law</label>
+            <label><input type="radio" name="mcq_24" value="C"> C. Tort law</label>
+            <label><input type="radio" name="mcq_24" value="D"> D. Property law</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: D <span class="citation">[cite: 27]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">25. Which branch of public law is primarily concerned with the tracing, prosecution, and punishment of criminals? <span class="citation">[cite: 27]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_25" value="A"> A. Constitutional law <span class="citation">[cite: 28]</span></label>
+            <label><input type="radio" name="mcq_25" value="B"> B. Criminal law</label>
+            <label><input type="radio" name="mcq_25" value="C"> C. Administrative law</label>
+            <label><input type="radio" name="mcq_25" value="D"> D. Public international law</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 28]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">26. Administrative law is best described as: <span class="citation">[cite: 28]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_26" value="A"> A. A field that deals exclusively with criminal prosecutions</label>
+            <label><input type="radio" name="mcq_26" value="B"> B. The branch of law that regulates interactions between government agents and civilians or private organizations</label>
+            <label><input type="radio" name="mcq_26" value="C"> C. The law that only governs tax matters</label>
+            <label><input type="radio" name="mcq_26" value="D"> D. A subset of private law</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 28]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">27. Which branch of law regulates relations between States and international organizations? <span class="citation">[cite: 28]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_27" value="A"> A. Public international law <span class="citation">[cite: 29]</span></label>
+            <label><input type="radio" name="mcq_27" value="B"> B. Private international law</label>
+            <label><input type="radio" name="mcq_27" value="C"> C. Constitutional law</label>
+            <label><input type="radio" name="mcq_27" value="D"> D. Administrative law</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: A <span class="citation">[cite: 29]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">28. Private international law primarily deals with: <span class="citation">[cite: 29]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_28" value="A"> A. Conflicts between domestic and international laws</label>
+            <label><input type="radio" name="mcq_28" value="B"> B. Determining which jurisdiction's law applies when a case falls under more than one legal system</label>
+            <label><input type="radio" name="mcq_28" value="C"> C. Criminal matters involving more than one country</label>
+            <label><input type="radio" name="mcq_28" value="D"> D. The administration of public services</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 29]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">29. European Union law is noted in the lecture for blurring the boundaries between public and private law because: <span class="citation">[cite: 29]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_29" value="A"> A. It only consists of treaties between member States</label>
+            <label><input type="radio" name="mcq_29" value="B"> B. It solely governs private commercial disputes</label>
+            <label><input type="radio" name="mcq_29" value="C"> C. It includes both constitutional-type rules among member States and rules affecting citizens and companies</label>
+            <label><input type="radio" name="mcq_29" value="D"> D. It is not legally binding on its members <span class="citation">[cite: 30]</span></label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: C <span class="citation">[cite: 30]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">30. What is the key difference between substantive and procedural law? <span class="citation">[cite: 31]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_30" value="A"> A. Substantive law outlines the rights and duties of individuals, while procedural law provides the means to enforce these rights <span class="citation">[cite: 32]</span></label>
+            <label><input type="radio" name="mcq_30" value="B"> B. Substantive law is created by the legislature, whereas procedural law is developed by the judiciary</label>
+            <label><input type="radio" name="mcq_30" value="C"> C. Substantive law only applies in criminal cases, while procedural law only applies in civil cases</label>
+            <label><input type="radio" name="mcq_30" value="D"> D. Substantive law is more flexible than procedural law</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: A <span class="citation">[cite: 32]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">31. Procedural law includes rules for: <span class="citation">[cite: 32]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_31" value="A"> A. Enforcing substantive rights through the courts</label>
+            <label><input type="radio" name="mcq_31" value="B"> B. Creating new substantive rights</label>
+            <label><input type="radio" name="mcq_31" value="C"> C. Establishing moral standards</label>
+            <label><input type="radio" name="mcq_31" value="D"> D. Drafting administrative regulations</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: A <span class="citation">[cite: 32]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">32. Criminal procedure rules are designed to: <span class="citation">[cite: 32]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_32" value="A"> A. Set guidelines for resolving disputes over contracts</label>
+            <label><input type="radio" name="mcq_32" value="B"> B. Establish the procedures for investigating, prosecuting, and punishing criminal suspects <span class="citation">[cite: 33]</span></label>
+            <label><input type="radio" name="mcq_32" value="C"> C. Provide advice on legislative drafting</label>
+            <label><input type="radio" name="mcq_32" value="D"> D. Regulate the formation of private companies</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 33]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">33. Which of the following divisions runs perpendicular to the public-private law division? <span class="citation">[cite: 33]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_33" value="A"> A. Civil versus criminal law <span class="citation">[cite: 34]</span></label>
+            <label><input type="radio" name="mcq_33" value="B"> B. National versus international law</label>
+            <label><input type="radio" name="mcq_33" value="C"> C. Substantive versus procedural law</label>
+            <label><input type="radio" name="mcq_33" value="D"> D. Constitutional versus administrative law</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: C <span class="citation">[cite: 34]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">34. What does a legal "right" signify? <span class="citation">[cite: 34]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_34" value="A"> A. A mere moral suggestion <span class="citation">[cite: 35]</span></label>
+            <label><input type="radio" name="mcq_34" value="B"> B. An entitlement that something is owed to a person through an act or omission by others</label>
+            <label><input type="radio" name="mcq_34" value="C"> C. A privilege granted solely by the government</label>
+            <label><input type="radio" name="mcq_34" value="D"> D. A discretionary benefit based on personal opinion</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 35]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">35. Which two primary elements are cited as the basis for the recognition and protection of legal rights? <span class="citation">[cite: 35]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_35" value="A"> A. Power and influence <span class="citation">[cite: 36]</span></label>
+            <label><input type="radio" name="mcq_35" value="B"> B. Wealth and status</label>
+            <label><input type="radio" name="mcq_35" value="C"> C. Will and interest</label>
+            <label><input type="radio" name="mcq_35" value="D"> D. Force and coercion</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: C <span class="citation">[cite: 36]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">36. What is the "object of a right" in legal terms? <span class="citation">[cite: 36]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_36" value="A"> A. The duty that the right imposes on others <span class="citation">[cite: 37]</span></label>
+            <label><input type="radio" name="mcq_36" value="B"> B. The specific act or omission for which the right is claimed</label>
+            <label><input type="radio" name="mcq_36" value="C"> C. The legal remedy available for a violation</label>
+            <label><input type="radio" name="mcq_36" value="D"> D. The interest the holder must demonstrate</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 37]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">37. A duty imposed by law that requires an individual to perform an act is known as a: <span class="citation">[cite: 38]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_37" value="A"> A. Negative duty</label>
+            <label><input type="radio" name="mcq_37" value="B"> B. Moral duty</label>
+            <label><input type="radio" name="mcq_37" value="C"> C. Positive duty</label>
+            <label><input type="radio" name="mcq_37" value="D"> D. Secondary duty</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: C <span class="citation">[cite: 38]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">38. What distinguishes a primary duty from a secondary duty? <span class="citation">[cite: 38]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_38" value="A"> A. Primary duties exist solely for enforcement purposes, while secondary duties exist independently <span class="citation">[cite: 39]</span></label>
+            <label><input type="radio" name="mcq_38" value="B"> B. Primary duties exist independently (e.g., not committing assault), whereas secondary duties exist to enforce primary duties (e.g., paying damages)</label>
+            <label><input type="radio" name="mcq_38" value="C"> C. Primary duties are moral, while secondary duties are legal</label>
+            <label><input type="radio" name="mcq_38" value="D"> D. There is no difference between the two</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 39]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">39. Which type of duty exists without any corresponding right? <span class="citation">[cite: 39]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_39" value="A"> A. Relative duty <span class="citation">[cite: 40]</span></label>
+            <label><input type="radio" name="mcq_39" value="B"> B. Secondary duty</label>
+            <label><input type="radio" name="mcq_39" value="C"> C. Absolute duty</label>
+            <label><input type="radio" name="mcq_39" value="D"> D. Positive duty</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: C <span class="citation">[cite: 40]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">40. How is "legal personality" best defined? <span class="citation">[cite: 40]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_40" value="A"> A. A natural characteristic possessed only by human beings <span class="citation">[cite: 41]</span></label>
+            <label><input type="radio" name="mcq_40" value="B"> B. An artificial creation of law attributing rights and duties to any capable entity</label>
+            <label><input type="radio" name="mcq_40" value="C"> C. A moral status recognized solely by ethical norms</label>
+            <label><input type="radio" name="mcq_40" value="D"> D. A status that cannot be assigned to corporations or organizations</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 41]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">41. What is one consequence of a company being recognized as a legal person? <span class="citation">[cite: 41]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_41" value="A"> A. Its shareholders are personally liable for all its debts <span class="citation">[cite: 42]</span></label>
+            <label><input type="radio" name="mcq_41" value="B"> B. The company is treated as a single unit in litigation, independent of its shareholders</label>
+            <label><input type="radio" name="mcq_41" value="C"> C. The company's existence depends on its current members</label>
+            <label><input type="radio" name="mcq_41" value="D"> D. It cannot enter into contracts</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 42]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">42. What does "ownership" denote in legal terms? <span class="citation">[cite: 42]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_42" value="A"> A. A temporary permission to use a thing <span class="citation">[cite: 43]</span></label>
+            <label><input type="radio" name="mcq_42" value="B"> B. A relationship between a person and a thing that confers rights such as possession, use, and disposition</label>
+            <label><input type="radio" name="mcq_42" value="C"> C. A moral claim without enforceability</label>
+            <label><input type="radio" name="mcq_42" value="D"> D. A responsibility without any benefits</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 43]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">43. Which of the following is NOT one of the typical rights associated with ownership? <span class="citation">[cite: 43]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_43" value="A"> A. The right to possess <span class="citation">[cite: 44]</span></label>
+            <label><input type="radio" name="mcq_43" value="B"> B. The right to use and enjoy</label>
+            <label><input type="radio" name="mcq_43" value="C"> C. The right to consume, destroy, or alienate</label>
+            <label><input type="radio" name="mcq_43" value="D"> D. The right to impose duties on others</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: D <span class="citation">[cite: 44]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">44. The remedy commonly available for a civil wrong is: <span class="citation">[cite: 45]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_44" value="A"> A. Incarceration</label>
+            <label><input type="radio" name="mcq_44" value="B"> B. Imposition of fines by the state</label>
+            <label><input type="radio" name="mcq_44" value="C"> C. Damages covering the loss suffered by the affected party</label>
+            <label><input type="radio" name="mcq_44" value="D"> D. Public shaming</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: C <span class="citation">[cite: 45]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">45. The term "democracy" is derived from the Greek word "demos." What does "demos" mean? <span class="citation">[cite: 45]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_45" value="A"> A. Rule <span class="citation">[cite: 46]</span></label>
+            <label><input type="radio" name="mcq_45" value="B"> B. People</label>
+            <label><input type="radio" name="mcq_45" value="C"> C. Power</label>
+            <label><input type="radio" name="mcq_45" value="D"> D. Freedom</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 46]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">46. Popular democracy is based on the idea that people rule themselves as free and equal beings. <span class="citation">[cite: 46]</span> This model is most directly linked to which two values? <span class="citation">[cite: 47]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_46" value="A"> A. Security and order <span class="citation">[cite: 48]</span></label>
+            <label><input type="radio" name="mcq_46" value="B"> B. Freedom and autonomy</label>
+            <label><input type="radio" name="mcq_46" value="C"> C. Tradition and stability</label>
+            <label><input type="radio" name="mcq_46" value="D"> D. Efficiency and meritocracy</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 48]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">47. Which of the following is considered a form of popular democracy? <span class="citation">[cite: 48]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_47" value="A"> A. Representative democracy <span class="citation">[cite: 49]</span></label>
+            <label><input type="radio" name="mcq_47" value="B"> B. Absolute monarchy</label>
+            <label><input type="radio" name="mcq_47" value="C"> C. Technocracy</label>
+            <label><input type="radio" name="mcq_47" value="D"> D. Oligarchy</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: A <span class="citation">[cite: 49]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">48. Social democracy emphasizes not only formal equality but also seeks to: <span class="citation">[cite: 49]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_48" value="A"> A. Extend democratization into private spheres such as the family and the economy</label>
+            <label><input type="radio" name="mcq_48" value="B"> B. Limit individual autonomy in favor of state control</label>
+            <label><input type="radio" name="mcq_48" value="C"> C. Prioritize traditional values over individual rights</label>
+            <label><input type="radio" name="mcq_48" value="D"> D. Abandon democratic processes in economic matters</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: A <span class="citation">[cite: 49]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">49. Participatory democracy seeks to: <span class="citation">[cite: 49]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_49" value="A"> A. Focus solely on protecting personal freedom without involving citizens in decision-making</label>
+            <label><input type="radio" name="mcq_49" value="B"> B. Extend the scope of citizens' participation in collective decision-making beyond conventional liberal models</label>
+            <label><input type="radio" name="mcq_49" value="C"> C. Replace representative democracy with appointed officials</label>
+            <label><input type="radio" name="mcq_49" value="D"> D. Limit public deliberation on policy issues</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 49]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">50. In the broader sense, constitutionalism refers to: <span class="citation">[cite: 50]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_50" value="A"> A. A set of political values and aspirations aimed at protecting freedom by establishing checks on government power</label>
+            <label><input type="radio" name="mcq_50" value="B"> B. A system where the government has absolute authority</label>
+            <label><input type="radio" name="mcq_50" value="C"> C. The elimination of individual rights in favor of state interests</label>
+            <label><input type="radio" name="mcq_50" value="D"> D. A purely ceremonial document with no practical effect</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: A <span class="citation">[cite: 50]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">51. What aspect of democracy is highlighted by ensuring freedom of speech, freedom of association, and free elections? <span class="citation">[cite: 50]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_51" value="A"> A. Popular participation <span class="citation">[cite: 51]</span></label>
+            <label><input type="radio" name="mcq_51" value="B"> B. Economic freedom</label>
+            <label><input type="radio" name="mcq_51" value="C"> C. Technocratic control</label>
+            <label><input type="radio" name="mcq_51" value="D"> D. Judicial activism</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: A <span class="citation">[cite: 51]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">52. The phrase "government of the people, by the people, for the people" emphasizes: <span class="citation">[cite: 51]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_52" value="A"> A. The centralization of power in the hands of a few elites</label>
+            <label><input type="radio" name="mcq_52" value="B"> B. The direct and active involvement of citizens in governance</label>
+            <label><input type="radio" name="mcq_52" value="C"> C. The need for technocratic governance</label>
+            <label><input type="radio" name="mcq_52" value="D"> D. The absence of checks on governmental power</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 51]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">53. Who distinguished between "corrective justice" and "distributive justice"? <span class="citation">[cite: 51]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_53" value="A"> A. Plato <span class="citation">[cite: 52]</span></label>
+            <label><input type="radio" name="mcq_53" value="B"> B. Aristotle</label>
+            <label><input type="radio" name="mcq_53" value="C"> C. Kant</label>
+            <label><input type="radio" name="mcq_53" value="D"> D. Hobbes</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 52]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">54. Corrective justice primarily focuses on: <span class="citation">[cite: 52]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_54" value="A"> A. Distributing resources fairly</label>
+            <label><input type="radio" name="mcq_54" value="B"> B. Restoring equality after wrongdoing</label>
+            <label><input type="radio" name="mcq_54" value="C"> C. Rewarding societal contributions</label>
+            <label><input type="radio" name="mcq_54" value="D"> D. Promoting state authority</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 52]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">55. Which of the following is an example of corrective justice? <span class="citation">[cite: 52]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_55" value="A"> A. Progressive taxation <span class="citation">[cite: 53]</span></label>
+            <label><input type="radio" name="mcq_55" value="B"> B. Remedy for tort</label>
+            <label><input type="radio" name="mcq_55" value="C"> C. Welfare programs</label>
+            <label><input type="radio" name="mcq_55" value="D"> D. Equal voting rights</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 53]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">56. Liberty in its negative aspect emphasizes: <span class="citation">[cite: 53]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_56" value="A"> A. State intervention to enable self-realization</label>
+            <label><input type="radio" name="mcq_56" value="B"> B. Non-interference and absence of external constraints</label>
+            <label><input type="radio" name="mcq_56" value="C"> C. Redistribution of wealth</label>
+            <label><input type="radio" name="mcq_56" value="D"> D. Mandatory public service</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 53]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">57. Which principle of equality advocates same treatment regardless of differences? <span class="citation">[cite: 53]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_57" value="A"> A. Substantive approach <span class="citation">[cite: 54]</span></label>
+            <label><input type="radio" name="mcq_57" value="B"> B. Distributive approach</label>
+            <label><input type="radio" name="mcq_57" value="C"> C. Formal approach <span class="citation">[cite: 55]</span></label>
+            <label><input type="radio" name="mcq_57" value="D"> D. Corrective approach</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: C <span class="citation">[cite: 55]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">58. Fraternity in legal terms refers to: <span class="citation">[cite: 55]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_58" value="A"> A. Economic equality</label>
+            <label><input type="radio" name="mcq_58" value="B"> B. Brotherhood and peaceful coexistence</label>
+            <label><input type="radio" name="mcq_58" value="C"> C. Absolute freedom of speech</label>
+            <label><input type="radio" name="mcq_58" value="D"> D. State sovereignty</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 55]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">59. Distributive justice is most concerned with: <span class="citation">[cite: 55]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_59" value="A"> A. Individual disputes</label>
+            <label><input type="radio" name="mcq_59" value="B"> B. Societal resource allocation</label>
+            <label><input type="radio" name="mcq_59" value="C"> C. Criminal sentencing</label>
+            <label><input type="radio" name="mcq_59" value="D"> D. International diplomacy</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 55]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">60. Negative liberty is BEST described as: <span class="citation">[cite: 55]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_60" value="A"> A. Freedom from interference</label>
+            <label><input type="radio" name="mcq_60" value="B"> B. State-provided healthcare</label>
+            <label><input type="radio" name="mcq_60" value="C"> C. Mandatory voting</label>
+            <label><input type="radio" name="mcq_60" value="D"> D. Collective ownership</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: A <span class="citation">[cite: 55]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">61. The formal approach to equality includes: <span class="citation">[cite: 55]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_61" value="A"> A. Recognizing caste differences</label>
+            <label><input type="radio" name="mcq_61" value="B"> B. Differential treatment based on gender</label>
+            <label><input type="radio" name="mcq_61" value="C"> C. Same treatment under law</label>
+            <label><input type="radio" name="mcq_61" value="D"> D. Wealth redistribution</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: C <span class="citation">[cite: 55]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">62. A law prohibiting discrimination promotes: <span class="citation">[cite: 55]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_62" value="A"> A. Corrective justice</label>
+            <label><input type="radio" name="mcq_62" value="B"> B. Distributive justice</label>
+            <label><input type="radio" name="mcq_62" value="C"> C. Fraternity</label>
+            <label><input type="radio" name="mcq_62" value="D"> D. Negative liberty</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: A <span class="citation">[cite: 55]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">63. The state's role in negative liberty is to: <span class="citation">[cite: 55]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_63" value="A"> A. Provide free education <span class="citation">[cite: 56]</span></label>
+            <label><input type="radio" name="mcq_63" value="B"> B. Maintain institutions like the police</label>
+            <label><input type="radio" name="mcq_63" value="C"> C. Redistribute land</label>
+            <label><input type="radio" name="mcq_63" value="D"> D. Regulate speech</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 56]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">64. Which statement aligns with distributive justice? <span class="citation">[cite: 57]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_64" value="A"> A. "Victims deserve compensation."</label>
+            <label><input type="radio" name="mcq_64" value="B"> B. "Honors should be awarded based on merit."</label>
+            <label><input type="radio" name="mcq_64" value="C"> C. "All citizens must vote." <span class="citation">[cite: 58]</span></label>
+            <label><input type="radio" name="mcq_64" value="D"> D. "Taxes should fund public healthcare."</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: D <span class="citation">[cite: 58]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">65. Which of the following criteria must a distinction meet to be compatible with the principle of equality? <span class="citation">[cite: 59]</span></p>
+        <div class="options">
+            <label><input type="radio" name="mcq_65" value="A"> A. It must be arbitrary and flexible <span class="citation">[cite: 60]</span></label>
+            <label><input type="radio" name="mcq_65" value="B"> B. It must be justified by objective, reasonable criteria and proportional to a legitimate aim</label>
+            <label><input type="radio" name="mcq_65" value="C"> C. It must favor the dominant group in society</label>
+            <label><input type="radio" name="mcq_65" value="D"> D. It must have no impact on vulnerable groups</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 60]</span></div>
+    </div>
+
+    <h2 class="section-title">True/False Questions – Human Rights PSC101 <span class="citation">[cite: 60]</span></h2>
+    <hr>
+
+    <div class="question-block">
+        <p class="question-text">1. The principle of non-discrimination is considered one of the most important principles in international human rights law. <span class="citation">[cite: 60]</span></p>
+        <div class="options">
+            <label><input type="radio" name="tf_1" value="A"> A. True <span class="citation">[cite: 61]</span></label>
+            <label><input type="radio" name="tf_1" value="B"> B. False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: A <span class="citation">[cite: 61]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">2. All differences in treatment automatically constitute discrimination under international law. <span class="citation">[cite: 61]</span></p>
+        <div class="options">
+            <label><input type="radio" name="tf_2" value="A"> A. True <span class="citation">[cite: 62]</span></label>
+            <label><input type="radio" name="tf_2" value="B"> B. False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 62]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">3. Direct discrimination is defined solely by its intended purpose to harm a group. <span class="citation">[cite: 62]</span></p>
+        <div class="options">
+            <label><input type="radio" name="tf_3" value="A"> A. True <span class="citation">[cite: 63]</span></label>
+            <label><input type="radio" name="tf_3" value="B"> B. False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 63]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">4. In cases of indirect discrimination, the intent of the law or practice is the primary factor in determining whether discrimination has occurred. <span class="citation">[cite: 63]</span></p>
+        <div class="options">
+            <label><input type="radio" name="tf_4" value="A"> A. True <span class="citation">[cite: 64]</span></label>
+            <label><input type="radio" name="tf_4" value="B"> B. False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 64]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">5. Affirmative action measures are intended to be permanent solutions to structural disadvantages. <span class="citation">[cite: 64]</span></p>
+        <div class="options">
+            <label><input type="radio" name="tf_5" value="A"> A. True</label>
+            <label><input type="radio" name="tf_5" value="B"> B. False <span class="citation">[cite: 65]</span></label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 65]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">6. The existence of special preferences for vulnerable groups automatically violates the principle of non-discrimination. <span class="citation">[cite: 65]</span></p>
+        <div class="options">
+            <label><input type="radio" name="tf_6" value="A"> A. True <span class="citation">[cite: 66]</span></label>
+            <label><input type="radio" name="tf_6" value="B"> B. False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 66]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">7. Legal rules not only specify behavior (e.g., “do not steal”) but also provide definitions and create competences. <span class="citation">[cite: 66]</span></p>
+        <div class="options">
+            <label><input type="radio" name="tf_7" value="A"> A. True <span class="citation">[cite: 67]</span></label>
+            <label><input type="radio" name="tf_7" value="B"> B. False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: A <span class="citation">[cite: 67]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">8. Collective enforcement is a characteristic of legal rules, meaning that state organs such as the police and courts are responsible for enforcing them. <span class="citation">[cite: 67]</span></p>
+        <div class="options">
+            <label><input type="radio" name="tf_8" value="A"> A. True <span class="citation">[cite: 68]</span></label>
+            <label><input type="radio" name="tf_8" value="B"> B. False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: A <span class="citation">[cite: 68]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">9. Unlike moral rules, positive law is immutable and cannot be repealed once established. <span class="citation">[cite: 68]</span></p>
+        <div class="options">
+            <label><input type="radio" name="tf_9" value="A"> A. True <span class="citation">[cite: 69]</span></label>
+            <label><input type="radio" name="tf_9" value="B"> B. False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 69]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">10. Laws reflect society’s values and are influenced by traditional ideas of right and wrong. <span class="citation">[cite: 69]</span></p>
+        <div class="options">
+            <label><input type="radio" name="tf_10" value="A"> A. True <span class="citation">[cite: 70]</span></label>
+            <label><input type="radio" name="tf_10" value="B"> B. False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: A <span class="citation">[cite: 70]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">11. All immoral behavior is automatically illegal. <span class="citation">[cite: 70]</span></p>
+        <div class="options">
+            <label><input type="radio" name="tf_11" value="A"> A. True <span class="citation">[cite: 71]</span></label>
+            <label><input type="radio" name="tf_11" value="B"> B. False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 71]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">12. Governments are responsible for enforcing both legal rules and moral precepts in exactly the same manner. <span class="citation">[cite: 71]</span></p>
+        <div class="options">
+            <label><input type="radio" name="tf_12" value="A"> A. True <span class="citation">[cite: 72]</span></label>
+            <label><input type="radio" name="tf_12" value="B"> B. False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 72]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">13. Public law is the part of law in which the government plays a central role. <span class="citation">[cite: 72]</span></p>
+        <div class="options">
+            <label><input type="radio" name="tf_13" value="A"> A. True <span class="citation">[cite: 73]</span></label>
+            <label><input type="radio" name="tf_13" value="B"> B. False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: A <span class="citation">[cite: 73]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">14. Private law exclusively governs relationships between the government and private citizens. <span class="citation">[cite: 73]</span></p>
+        <div class="options">
+            <label><input type="radio" name="tf_14" value="A"> A. True <span class="citation">[cite: 74]</span></label>
+            <label><input type="radio" name="tf_14" value="B"> B. False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 74]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">15. European Union law is clearly divided into either public law or private law, with no overlap between the two. <span class="citation">[cite: 74]</span></p>
+        <div class="options">
+            <label><input type="radio" name="tf_15" value="A"> A. True <span class="citation">[cite: 75]</span></label>
+            <label><input type="radio" name="tf_15" value="B"> B. False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 75]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">16. Substantive law establishes what rights and obligations individuals have, while procedural law provides the methods for enforcing these rights. <span class="citation">[cite: 75]</span></p>
+        <div class="options">
+            <label><input type="radio" name="tf_16" value="A"> A. True <span class="citation">[cite: 76]</span></label>
+            <label><input type="radio" name="tf_16" value="B"> B. False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: A <span class="citation">[cite: 76]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">17. Civil procedure is a branch of procedural law that deals with the enforcement of private law matters. <span class="citation">[cite: 76]</span></p>
+        <div class="options">
+            <label><input type="radio" name="tf_17" value="A"> A. True <span class="citation">[cite: 77]</span></label>
+            <label><input type="radio" name="tf_17" value="B"> B. False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: A <span class="citation">[cite: 77]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">18. Criminal procedure rules are designed to provide guidelines for resolving disputes between private citizens. <span class="citation">[cite: 77]</span></p>
+        <div class="options">
+            <label><input type="radio" name="tf_18" value="A"> A. True <span class="citation">[cite: 78]</span></label>
+            <label><input type="radio" name="tf_18" value="B"> B. False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 78]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">19. Legal rights are those recognized and protected by the legal system and are often enforced by specific legal mechanisms. <span class="citation">[cite: 78]</span></p>
+        <div class="options">
+            <label><input type="radio" name="tf_19" value="A"> A. True <span class="citation">[cite: 79]</span></label>
+            <label><input type="radio" name="tf_19" value="B"> B. False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: A <span class="citation">[cite: 79]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">20. Duties imposed by law and moral duties are identical in all respects. <span class="citation">[cite: 79]</span></p>
+        <div class="options">
+            <label><input type="radio" name="tf_20" value="A"> A. True <span class="citation">[cite: 80]</span></label>
+            <label><input type="radio" name="tf_20" value="B"> B. False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 80]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">21. A positive duty under law obligates an individual to perform a specific act. <span class="citation">[cite: 80]</span></p>
+        <div class="options">
+            <label><input type="radio" name="tf_21" value="A"> A. True <span class="citation">[cite: 81]</span></label>
+            <label><input type="radio" name="tf_21" value="B"> B. False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: A <span class="citation">[cite: 81]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">22. Secondary duties exist solely for the enforcement of primary duties, such as the duty to pay damages. <span class="citation">[cite: 81]</span></p>
+        <div class="options">
+            <label><input type="radio" name="tf_22" value="A"> A. True <span class="citation">[cite: 82]</span></label>
+            <label><input type="radio" name="tf_22" value="B"> B. False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: A <span class="citation">[cite: 82]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">23. Legal personality is exclusively attributed to human beings. <span class="citation">[cite: 82]</span></p>
+        <div class="options">
+            <label><input type="radio" name="tf_23" value="A"> A. True <span class="citation">[cite: 83]</span></label>
+            <label><input type="radio" name="tf_23" value="B"> B. False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 83]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">24. Under criminal law, an unborn child is recognized as a legal person, making acts intended to prevent its birth a criminal offense. <span class="citation">[cite: 83]</span></p>
+        <div class="options">
+            <label><input type="radio" name="tf_24" value="A"> A. True <span class="citation">[cite: 84]</span></label>
+            <label><input type="radio" name="tf_24" value="B"> B. False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 84]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">25. Democracy is fundamentally based on the equal distribution of political power and popular participation. <span class="citation">[cite: 84]</span></p>
+        <div class="options">
+            <label><input type="radio" name="tf_25" value="A"> A. True <span class="citation">[cite: 85]</span></label>
+            <label><input type="radio" name="tf_25" value="B"> B. False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: A <span class="citation">[cite: 85]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">26. In a liberal democracy, protecting basic liberties such as freedom of speech and religion takes precedence over the pure expression of the popular will. <span class="citation">[cite: 85]</span></p>
+        <div class="options">
+            <label><input type="radio" name="tf_26" value="A"> A. True <span class="citation">[cite: 86]</span></label>
+            <label><input type="radio" name="tf_26" value="B"> B. False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: A <span class="citation">[cite: 86]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">27. Social democracy seeks to achieve personal freedom and political equality solely through formal equality measures, without addressing economic disadvantages. <span class="citation">[cite: 86]</span></p>
+        <div class="options">
+            <label><input type="radio" name="tf_27" value="A"> A. True <span class="citation">[cite: 87]</span></label>
+            <label><input type="radio" name="tf_27" value="B"> B. False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 87]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">28. Participatory democracy emphasizes extending citizen involvement in collective decision-making processes. <span class="citation">[cite: 87]</span></p>
+        <div class="options">
+            <label><input type="radio" name="tf_28" value="A"> A. True <span class="citation">[cite: 88]</span></label>
+            <label><input type="radio" name="tf_28" value="B"> B. False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: A <span class="citation">[cite: 88]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">29. In its narrow sense, constitutionalism is achieved by limiting government power through the existence of a written Constitution. <span class="citation">[cite: 88]</span></p>
+        <div class="options">
+            <label><input type="radio" name="tf_29" value="A"> A. True <span class="citation">[cite: 89]</span></label>
+            <label><input type="radio" name="tf_29" value="B"> B. False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: A <span class="citation">[cite: 89]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">30. In the broad sense, constitutionalism involves not only limiting government power but also protecting freedom through a system of checks and balances. <span class="citation">[cite: 89]</span></p>
+        <div class="options">
+            <label><input type="radio" name="tf_30" value="A"> A. True <span class="citation">[cite: 90]</span></label>
+            <label><input type="radio" name="tf_30" value="B"> B. False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: A <span class="citation">[cite: 90]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">31. Corrective justice focuses on compensating victims of wrongdoing. <span class="citation">[cite: 90]</span></p>
+        <div class="options">
+            <label><input type="radio" name="tf_31" value="A"> A. True <span class="citation">[cite: 91]</span></label>
+            <label><input type="radio" name="tf_31" value="B"> B. False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: A <span class="citation">[cite: 91]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">32. Distributive justice is primarily concerned with resolving disputes between individuals. <span class="citation">[cite: 91]</span></p>
+        <div class="options">
+            <label><input type="radio" name="tf_32" value="A"> A. True <span class="citation">[cite: 92]</span></label>
+            <label><input type="radio" name="tf_32" value="B"> B. False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 92]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">33. Negative liberty requires the state to actively create opportunities for citizens. <span class="citation">[cite: 92]</span></p>
+        <div class="options">
+            <label><input type="radio" name="tf_33" value="A"> A. True</label>
+            <label><input type="radio" name="tf_33" value="B"> B. False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 92]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">34. The formal approach to equality ignores differences like gender and caste. <span class="citation">[cite: 93]</span></p>
+        <div class="options">
+            <label><input type="radio" name="tf_34" value="A"> A. True <span class="citation">[cite: 94]</span></label>
+            <label><input type="radio" name="tf_34" value="B"> B. False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: A <span class="citation">[cite: 94]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">35. Fraternity in law promotes exclusion and subordination. <span class="citation">[cite: 94]</span></p>
+        <div class="options">
+            <label><input type="radio" name="tf_35" value="A"> A. True <span class="citation">[cite: 95]</span></label>
+            <label><input type="radio" name="tf_35" value="B"> B. False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 95]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">36. Corrective justice applies only to criminal law. <span class="citation">[cite: 95]</span></p>
+        <div class="options">
+            <label><input type="radio" name="tf_36" value="A"> A. True <span class="citation">[cite: 96]</span></label>
+            <label><input type="radio" name="tf_36" value="B"> B. False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 96]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">37. Corruption is defined as the abuse of entrusted power for private gain. <span class="citation">[cite: 96]</span></p>
+        <div class="options">
+            <label><input type="radio" name="tf_37" value="A"> A. True <span class="citation">[cite: 97]</span></label>
+            <label><input type="radio" name="tf_37" value="B"> B. False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: A <span class="citation">[cite: 97]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">38. Petty corruption involves large sums of money at the highest levels of government. <span class="citation">[cite: 97]</span></p>
+        <div class="options">
+            <label><input type="radio" name="tf_38" value="A"> A. True <span class="citation">[cite: 98]</span></label>
+            <label><input type="radio" name="tf_38" value="B"> B. False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 98]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">39. Systemic corruption refers to deeply embedded corruption that becomes part of an organization’s normal operations. <span class="citation">[cite: 98]</span></p>
+        <div class="options">
+            <label><input type="radio" name="tf_39" value="A"> A. True <span class="citation">[cite: 99]</span></label>
+            <label><input type="radio" name="tf_39" value="B"> B. False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: A <span class="citation">[cite: 99]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">40. Corporate corruption only affects shareholders and employees. <span class="citation">[cite: 99]</span></p>
+        <div class="options">
+            <label><input type="radio" name="tf_40" value="A"> A. True <span class="citation">[cite: 100]</span></label>
+            <label><input type="radio" name="tf_40" value="B"> B. False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 100]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">41. The United Nations Convention Against Corruption (UNCAC) is a non-binding agreement. <span class="citation">[cite: 100]</span></p>
+        <div class="options">
+            <label><input type="radio" name="tf_41" value="A"> A. True <span class="citation">[cite: 101]</span></label>
+            <label><input type="radio" name="tf_41" value="B"> B. False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 101]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">42. Transparency International publishes the Corruption Perceptions Index. <span class="citation">[cite: 101]</span></p>
+        <div class="options">
+            <label><input type="radio" name="tf_42" value="A"> A. True <span class="citation">[cite: 102]</span></label>
+            <label><input type="radio" name="tf_42" value="B"> B. False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: A <span class="citation">[cite: 102]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">43. Grassroots organizations play no role in combating corruption. <span class="citation">[cite: 102]</span></p>
+        <div class="options">
+            <label><input type="radio" name="tf_43" value="A"> A. True <span class="citation">[cite: 103]</span></label>
+            <label><input type="radio" name="tf_43" value="B"> B. False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 103]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">44. Legal “facilitation payments” are not considered forms of corruption. <span class="citation">[cite: 103]</span></p>
+        <div class="options">
+            <label><input type="radio" name="tf_44" value="A"> A. True <span class="citation">[cite: 104]</span></label>
+            <label><input type="radio" name="tf_44" value="B"> B. False</label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 104]</span></div>
+    </div>
+
+    <div class="question-block">
+        <p class="question-text">45. Systemic corruption is easy to reform once identified. <span class="citation">[cite: 104]</span></p>
+        <div class="options">
+            <label><input type="radio" name="tf_45" value="A"> A. True</label>
+            <label><input type="radio" name="tf_45" value="B"> B. False <span class="citation">[cite: 105]</span></label>
+        </div>
+        <button class="show-answer-btn" onclick="showAnswer(this)">Show Answer</button>
+        <div class="answer">Answer: B <span class="citation">[cite: 105]</span></div>
+    </div>
+
+
+</div>
+
+<script>
+    function showAnswer(btn) {
+        var answerDiv = btn.nextElementSibling;
+        if (answerDiv.style.display === 'none' || answerDiv.style.display === '') {
+            answerDiv.style.display = 'block';
+            btn.textContent = 'Hide Answer';
+        } else {
+            answerDiv.style.display = 'none';
+            btn.textContent = 'Show Answer';
+        }
+    }
+</script>
+
+</body>
+</html>
